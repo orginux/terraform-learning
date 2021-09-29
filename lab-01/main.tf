@@ -12,3 +12,14 @@ resource "aws_instance" "first_instace" {
     Owner = "orginux"
   }
 }
+
+resource "aws_instance" "second_instace" {
+  # Debian 10 (HVM), SSD Volume Type
+  ami           = "ami-0874dad5025ca362c "
+  instance_type = "t2.micro"
+
+  tags = {
+    Name = "second_instace"
+    Owner = "orginux"
+  }
+}
