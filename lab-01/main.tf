@@ -1,4 +1,4 @@
-provider "aws"{
+provider "aws" {
   region = "eu-west-1"
 }
 
@@ -8,8 +8,9 @@ resource "aws_instance" "first_instace" {
   instance_type = "t2.micro"
 
   tags = {
-    Name = "first_instace"
-    Owner = "orginux"
+    Name    = "first_instace"
+    Owner   = "orginux"
+    Project = "new_project"
   }
 }
 
@@ -19,7 +20,7 @@ resource "aws_instance" "second_instace" {
   instance_type = "t2.micro"
 
   tags = {
-    Name = "second_instace"
+    Name  = "second_instace"
     Owner = "orginux"
   }
 }
