@@ -15,7 +15,7 @@ resource "aws_instance" "first_instace" {
 
 resource "aws_instance" "second_instace" {
   # Debian 10 (HVM), SSD Volume Type
-  ami           = "ami-0874dad5025ca362c "
+  ami           = "ami-0874dad5025ca362c"
   instance_type = "t2.micro"
 
   tags = {
